@@ -28,14 +28,34 @@ import proof_texts as pte
 log = logging.getLogger("wordsiv")
 log.setLevel(logging.ERROR)
 
+
 # Font path
-fonts = ("fonts/WorkSans[wght].ttf",)
+def get_files(path):
+    files_toprocess = []
+    extensions = (".ttf", ".otf")
+    for root, dirs, files in os.walk(path):
+        for e in extensions:
+            files_toprocess += [
+                str(os.path.join(root, f)) for f in files if f.endswith(e)
+            ]
+    return files_toprocess
+
+
+fontFolder = "fonts/"
+
+customLocation = ("fonts/WorkSans[wght].ttf",)
+# customLocation = ()
+
+if customLocation:
+    fonts = customLocation
+else:
+    fonts = get_files(fontFolder)
 
 # Set your own axes values manually. Otherwise, leave empty and the script
 # will automatically use the master instances.
-# axesValues = {"wght": (100, 900), "ital": (0,1)}
-# axesValues = {}
 axesValues = {"wght": (100, 400, 900)}
+# axesValues = {}
+# axesValues = {"wght": (100, 900), "ital": (0,1)}
 
 # Some constants related to page and layout
 # Page dimensions and margin
@@ -952,7 +972,5 @@ for indFont in fonts:
 
 #############
 # Saving the entire proof doc
-db.saveImage(
-    f"proofs/{nowformat}_{familyName}-proof.pdf"
-)
+db.saveImage(f"proofs/{nowformat}_{familyName}-proof.pdf")
 print(datetime.datetime.now() - now)
