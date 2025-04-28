@@ -43,8 +43,8 @@ def get_files(path):
 
 fontFolder = "fonts/"
 
-customLocation = ("fonts/WorkSans[wght].ttf",)
-# customLocation = ()
+# customLocation = ("fonts/WorkSans[wght].ttf",)
+customLocation = ()
 
 if customLocation:
     fonts = customLocation
@@ -64,7 +64,7 @@ marginVertical = 50
 marginHorizontal = 40
 
 # Font sizes
-charsetFontSize = 90
+charsetFontSize = 82
 spacingFontSize = 14
 largeTextFontSize = 24
 smallTextFontSize = 9
