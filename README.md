@@ -28,9 +28,9 @@ Here are the links to the repositories where you can find each library in case y
 - [drawBotGrid](https://github.com/mathieureguer/drawbotgrid)
 - [Wordsiv](https://github.com/tallpauley/wordsiv)
 
-## How to use
+## General proofing document generation
 
-After installing the required libraries in Drawbot, make sure you add the fonts you want to proof in `fonts/` folder. Alternatively, you can define a custom list of fonts to proof by adding them as a list to the `customLocation` variable, and that will maintain the order of the list for the proofs themselves. That would look something like this:
+After installing the required libraries in Drawbot, open the `drawbot_type_proofing.py` file in Drawbot and make sure you add the fonts you want to proof in `fonts/` folder. Alternatively, you can define a custom list of fonts to proof by adding them as a list to the `customLocation` variable, and that will maintain the order of the list for the proofs themselves. That would look something like this:
 
 ```python
 customLocation = ("fonts/WorkSans[wght].ttf","fonts/WorkSans-Italic[wght].ttf",)
