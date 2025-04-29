@@ -17,7 +17,7 @@ Hombrew will install and the tools that we need will be installed with it.
 To install the required libraries in DrawBot, open the package manager with the menu `Python -> Install Python Packages` and then copy and paste the following string:
 
 ```Python
-fonttools unicodedata2 git+https://github.com/mathieureguer/drawbotgrid git+https://github.com/tallpauley/wordsiv
+fonttools unicodedata2 git+https://github.com/mathieureguer/drawbotgrid git+https://github.com/tallpauley/wordsiv numpy
 ```
 
 and then press `Go`.
@@ -37,6 +37,7 @@ customLocation = ("fonts/WorkSans[wght].ttf","fonts/WorkSans-Italic[wght].ttf",)
 ```
 
 Once the script finishes running, you can find the proof in the `proofs/` folder.
+
 
 ## Credits and thanks
 
