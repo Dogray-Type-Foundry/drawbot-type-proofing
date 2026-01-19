@@ -1,5 +1,7 @@
 # drawbot-type-proofing
 Scripts for generating type proofs using Drawbot
+> [!WARNING]
+> This repository has been archive and was superseded by [Type Proofing](https://github.com/Dogray-Type-Foundry/Type-Proofing), an app with a GUI that does everything the code in this repo does and more, without the need for a complex setup.
 
 ## Requirements
 
